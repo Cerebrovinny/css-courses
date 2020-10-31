@@ -196,26 +196,30 @@ body {
     border: none;
 }
 
-.first-box {
-    margin: 10px 15px 20px 40px;
-    background: #2ddf5c;
-    padding: 20px 30px 50px 10px;
-    height: 300px;
-    width: 50%;
-    display: none;
+.main-footer {
+    background-color: #000;
+    padding: 32px;
+    margin-top: 48px;
 }
 
-.second-box {
-    background: #ff1b68;
-    width: 50%;
-    margin: 10px 15px 20px 40px;
-    padding: 20px 30px 50px 10px;
+.main-footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-.second-box:hover {
-    background: yellow;
+.main-footer ul li {
+    display: inline-block;
+    margin: 0 16px;
 }
 
-.flex {
-    display: flex;
+.main-footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-footer ul li a:hover,
+.main-footer ul li a:active {
+    color: #ccc;
 }
