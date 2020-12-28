@@ -9,7 +9,7 @@ body {
 
 .main-header {
     width: 100%;
-    position: fixed;
+    position: top;
     background: #2ddf5c;
     padding: 8px 16px; 
     z-index: 2;
