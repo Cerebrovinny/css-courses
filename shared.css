@@ -2,9 +2,19 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
+}
+
+.backdrop {
+    position: fixed;
+    display: none;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .main-header {
@@ -24,7 +34,7 @@ body {
     color: #0e4f1f;
     text-decoration: none;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 1.3rem;
     height: 22px;
     display: inline-block;
 }
@@ -49,14 +59,14 @@ body {
 
 .main-nav__item {
     display: inline-block;
-    margin: 0 16px;
+    margin: 0 1rem;
 }
 
 .main-nav__item a {
     color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
-    padding: 3px 0;
+    padding: 0.1rem 0;
 }
 
 .main-nav__item a:hover, 
@@ -68,7 +78,7 @@ body {
 .main-nav__item--cta a {
     color: white;
     background: #ff1b68;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     border-radius: 8px;
 }
 
@@ -81,8 +91,8 @@ body {
 
 .main-footer {
     background-color: #000;
-    padding: 32px;
-    margin-top: 48px;
+    padding: 2rem;
+    margin-top: 3rem;
 }
 
 .button {
@@ -90,7 +100,7 @@ body {
     color: white;
     font: inherit;
     border: 1.5px solid #0e4f1f;
-    padding: 8px;
+    padding: 0.5rem;
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
@@ -116,7 +126,7 @@ body {
 
 .main-footer ul li {
     display: inline-block;
-    margin: 0 16px;
+    margin: 0 2rem;
 }
 
 .main-footer ul li a {
