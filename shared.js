@@ -2,6 +2,7 @@
 var backdrop = document.querySelector('.backdrop');
 var selectPlanButton = document.querySelectorAll('.plan button')
 var modal = document.querySelector('.modal');
+var modalNoButton = document.querySelector('.modal__action--negative');
 
 //mobile menu
 var mobileButton = document.querySelector('.toggle-button');
@@ -26,12 +27,17 @@ backdrop.addEventListener('click', () => {
     closeModal();
 });
 
-modal.addEventListener('click', closeModal);
+if (modalNoButton) {
+    modalNoButton.addEventListener('click', closeModal);
+
+}
 
 function closeModal(){
     // modal.style.display = 'none';
     // backdrop.style.display = 'none';
-    modal.classList.remove('open');
+    if(modal){
+        modal.classList.remove('open');
+    }
     backdrop.classList.remove('open');
 }
 
