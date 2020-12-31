@@ -198,3 +198,8 @@ body {
 .main-footer ul li a:active {
     color: #ccc;
 }
+
+
+.open {
+    display: block !important;
+}

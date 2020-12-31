@@ -12,27 +12,35 @@ console.log(mobileMenu)
 
     for (var i = 0; i < selectPlanButton.length; i++) {
         selectPlanButton[i].addEventListener('click', function() {
-            modal.style.display = 'block';
-            backdrop.style.display = 'block'
+            //modal.style.display = 'block';
+            //backdrop.style.display = 'block'
+            // modal.className = 'open'; // This will actually overwrite the complete class list
+            modal.classList.add('open');
+            backdrop.classList.add('open');
         });
     }
 
 backdrop.addEventListener('click', () => { 
-    mobileMenu.style.display = 'none';
+    //mobileMenu.style.display = 'none';
+    mobileMenu.classList.remove('open');
     closeModal();
 });
 
 modal.addEventListener('click', closeModal);
 
 function closeModal(){
-    modal.style.display = 'none';
-    backdrop.style.display = 'none';
+    // modal.style.display = 'none';
+    // backdrop.style.display = 'none';
+    modal.classList.remove('open');
+    backdrop.classList.remove('open');
 }
 
 //mobile menu
 function openMobileMenu(){
-    mobileMenu.style.display = 'block';
-    backdrop.style.display = 'block';
+    // mobileMenu.style.display = 'block';
+    // backdrop.style.display = 'block';
+    mobileMenu.classList.add('open');
+    backdrop.classList.add('open');
 }
 
 mobileButton.addEventListener('click', openMobileMenu);
