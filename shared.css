@@ -43,6 +43,13 @@ body {
     height: 100%;
 }
 
+@media (max-width: 867px) {
+    .main-header__brand {
+        position: absolute;
+        left: 90%;
+    }
+}
+
 .toggle-button {
     width: 3rem;
     background: transparent;
@@ -70,6 +77,12 @@ body {
     text-align: right;
     width: calc(100% - 122px);
     vertical-align: middle;
+}
+
+@media (max-width: 867px) {
+    .main-nav {
+        display: none;
+    }
 }
 
 .main-nav__items {

@@ -1,6 +1,6 @@
 #product-overview {
     background: linear-gradient(to top, rgba(80,68,18, 0.6) 10%, 
-    transparent), url("./images/freedom.jpg") left 10% bottom 70%/
+    transparent), url("./images/freedom.jpg") left/
     cover no-repeat border-box, #ff1b68;
     /* background-image: url("freedom.jpg");
     background-size: cover;
@@ -17,22 +17,33 @@
 
 }
 
-.section-title {
-    color: #2ddf5c;
-    text-align: center;
-}
-
 #product-overview h1 {
     color: white;
     font-family: 'Anton', sans-serif;
     position: absolute;
     bottom: 5%;
     left: 3%;
+    font-size: 1.6rem;
+}
+
+@media (min-width: 867px) {
+    #product-overview {
+        height: 80vh;
+        background-position: 50% 25%;
+    }
+
+    #product-overview h1 {
+        font-size: 3rem;
+    }
+}
+
+.section-title {
+    color: #2ddf5c;
+    text-align: center;
 }
 
 .plan__list {
-    width: 80%;
-    margin: auto;
+    width: 100%;
     text-align: center;
 }
 
@@ -44,6 +55,23 @@
     display: inline-block;
     width: 30%;
     vertical-align: middle;
+}
+
+@media (min-width: 867px) {
+    .plan {
+        max-width: 25rem;
+        min-width: 13rem;
+    }
+}
+
+@media (max-width: 867px) {
+    .plan {
+        display: block;
+        width: 100%;
+        margin-top: 1rem;
+        margin-right: 0;
+        margin-left: 0;
+    }
 }
 
 .plan--highlighted {
@@ -107,10 +135,19 @@
     text-align: center;
 }
 
-.key-feature {
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
+@media (min-width: 867px) {
+    .key-feature {
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+    }
+}
+
+
+@media (max-width: 867px) {
+    .key-feature {
+        width: 100%;
+    }
 }
 
 .key-feature__image {
